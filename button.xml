@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bottle_toast_bg"
+
+    android:gravity="center"
+
+    android:orientation="vertical">
+
+    <TextView
+
+       style="@style/MMFontTitleInList"
+
+       android:singleLine="false"
+
+       android:layout_width="fill_parent"
+
+       android:gravity="center"
+
+       android:layout_marginTop="10dp"
+
+       android:layout_height="wrap_content"
+
+       android:id="@+id/bottle_dialog_text"/>
+
+    <Button
+
+       android:layout_width="fill_parent"
+
+       android:layout_height="wrap_content"
+
+       android:layout_marginTop="20dp"
+
+       android:id="@+id/bottle_dialog_button"
+
+       android:text="@string/app_ok"
+
+       android:background="@drawable/bottle_tip_button"/>
+
+</LinearLayout>
