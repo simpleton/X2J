@@ -9,11 +9,12 @@ def parse_target_info(doc):
     print len(container_list)
     jsonobj = {"func_map":{}}
     for container in container_list:
-        jsonobj["func_map"][str(container["id"])] = []
+        jsonobj["func_map"][str(container["id"])] = {}
         for trs in container.table:
             func_item = (",".join(trs.stripped_strings)).split(",")
             for item in func_item[1:]:
-                jsonobj["func_map"][str(container["id"])].append({ str(item) : str(func_item[0])})
+                #jsonobj["func_map"][str(container["id"])].append({ str(item) : str(func_item[0])})
+                jsonobj["func_map"][str(container["id"])][str(item)] = str(func_item[0])
     return jsonobj
 
 def save_result(jsonobj):
